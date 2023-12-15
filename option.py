@@ -1,3 +1,9 @@
+"""
+Hover for python interface
+Author: REXLEP
+"""
+
+
 from tkinter import *
 
 
@@ -50,7 +56,6 @@ class HoverWindow(object):
             tw.bind('<Motion>', self.on_tooltip_motion)  # Bind <Motion> event
 
     def on_tooltip_motion(self, event):
-        "Update tooltip position with mouse movement"
         if not self.tipwindow:
             return
 
