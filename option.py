@@ -8,7 +8,9 @@ from tkinter import *
 
 
 class HoverWindow(object):
+    """This class use for hover window"""
     def __init__(self, widget, duration=1, font=None, bg="#2B2B2B", fg="#ffffff", borderwidth=1, move_with_mouse=True):
+        """Initialize hover window elements"""
         self.widget = widget
         self.tipwindow = None
         self.id = None
@@ -21,7 +23,7 @@ class HoverWindow(object):
         self.move_with_mouse = move_with_mouse
 
     def showtip(self, text):
-        "Display text in tooltip window"
+        """This function display text in tooltip window"""
         self.text = text
 
         # Cancel any scheduled tooltip display
@@ -32,6 +34,7 @@ class HoverWindow(object):
         self.id = self.widget.after(self.duration, lambda: self._showtip(text))
 
     def _showtip(self, text):
+        """This function make hover window"""
         if self.tipwindow or not self.text:
             return
         x, y, _, cy = self.widget.bbox("insert")
@@ -56,6 +59,7 @@ class HoverWindow(object):
             tw.bind('<Motion>', self.on_tooltip_motion)  # Bind <Motion> event
 
     def on_tooltip_motion(self, event):
+        """This function make your hover window move with your mouse movement"""
         if not self.tipwindow:
             return
 
@@ -64,6 +68,7 @@ class HoverWindow(object):
         self.tipwindow.wm_geometry("+%d+%d" % (x, y))
 
     def hidetip(self):
+        """This function hide the window"""
         tw = self.tipwindow
         self.tipwindow = None
         if tw:
@@ -75,6 +80,7 @@ class HoverWindow(object):
 
 def Hover(widget, text, duration=1000, font=None, bg="#2B2B2B", fg="#ffffff", borderwidth=1, move_with_mouse=True):
     toolTip = HoverWindow(widget, duration, font, bg, fg, borderwidth, move_with_mouse)
+    """This function allow you to make a hover window for your interface widget"""
 
     def enter(event):
         toolTip.showtip(text)
