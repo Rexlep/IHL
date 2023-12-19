@@ -78,7 +78,7 @@ class HoverWindow(object):
             self.id = None
 
 
-def Hover(widget, text, duration=1000, font=None, bg="#2B2B2B", fg="#ffffff", borderwidth=1, move_with_mouse=True):
+def Hover(widget, text, duration=0, font=None, bg="#2B2B2B", fg="#ffffff", borderwidth=1, move_with_mouse=True):
     toolTip = HoverWindow(widget, duration, font, bg, fg, borderwidth, move_with_mouse)
     """This function allow you to make a hover window for your interface widget"""
 

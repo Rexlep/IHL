@@ -7,4 +7,4 @@ Homepage: https://github.com/Akascape/CTkListbox
 
 __version__ = '0.1'
 
-from hover.option import Hover
+# from hover.option import Hover
