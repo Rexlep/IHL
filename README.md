@@ -1,7 +1,7 @@
 # IHL
 This is a package for tkinter or customtkinter widgets
 
-![Untitled-1](https://github.com/Rexlep/IHL/assets/141561659/bf220e5b-4a68-4d45-99ea-913187681aba)
+![Untitled-1](https://github.com/Rexlep/IHL/assets/141561659/051139fa-4df1-470b-8f3c-f984b8455a71)
 
 ## Installation
 ```
