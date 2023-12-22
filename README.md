@@ -35,7 +35,6 @@ root.mainloop()
 |-----------| ------------|
 | fg | text color of hover window |
 | bg | color of background |
-| border_color | border color of the hover window |
 | border_width | width of the border frame |
 | font | set font and size for text |
 | move_with_mouse | movement of mouse |
