@@ -1,4 +1,4 @@
-# IHL
+# IHL (Interface Hover Library)
 This is a package for tkinter or customtkinter widgets
 
 ![Untitled-1](https://github.com/Rexlep/IHL/assets/141561659/051139fa-4df1-470b-8f3c-f984b8455a71)
