@@ -1,7 +1,7 @@
 # IHL
 This is a package for tkinter or customtkinter widgets
 
-![Screenshot 2023-12-22 123309](https://github.com/Akascape/CTkListbox/assets/141561659/d25babec-82d0-4a90-a61c-6f7f66e186da)
+![Untitled-1](https://github.com/Rexlep/IHL/assets/141561659/bf220e5b-4a68-4d45-99ea-913187681aba)
 
 ## Installation
 ```
