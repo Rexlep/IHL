@@ -37,7 +37,7 @@ root.mainloop()
 | bg | color of background |
 | border_width | width of the border frame |
 | font | set font and size for text |
-| move_with_mouse | movement of mouse |
+| move_with_mouse | movement of mouse(True or False) |
 | duration | change the create time of window |
 
 Tanks for visiting i hope it was helpful to increase your development skill :)
