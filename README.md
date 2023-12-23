@@ -38,5 +38,6 @@ root.mainloop()
 | border_width | width of the border frame |
 | font | set font and size for text |
 | move_with_mouse | movement of mouse |
+| duration | change the create time of window |
 
-Tanks for visiting i hope it was helpful to increase your development skill
+Tanks for visiting i hope it was helpful to increase your development skill :)
