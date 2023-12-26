@@ -9,7 +9,9 @@ from tkinter import *
 
 class HoverWindow(object):
     """This class use for hover window"""
-    def __init__(self, widget, duration=1, font=None, bg="#2B2B2B", fg="#ffffff", borderwidth=1, move_with_mouse=True):
+
+    def __init__(self, widget, duration=1, font=None, bg="#2B2B2B", fg="#ffffff", border_width=1, border_color="#000000",
+                 move_with_mouse=True):
         """Initialize hover window elements"""
         self.widget = widget
         self.tipwindow = None
@@ -19,7 +21,8 @@ class HoverWindow(object):
         self.font = font if font else ("tahoma", "12", "normal")
         self.bg = bg
         self.fg = fg
-        self.borderwidth = borderwidth
+        self.border_width = border_width
+        self.border_color = border_color
         self.move_with_mouse = move_with_mouse
 
     def showtip(self, text):
@@ -51,7 +54,7 @@ class HoverWindow(object):
             background=self.bg,
             foreground=self.fg,
             relief=SOLID,
-            borderwidth=self.borderwidth,
+            borderwidth=self.border_width,
             font=self.font
         )
         label.pack(ipadx=1)
@@ -78,8 +81,8 @@ class HoverWindow(object):
             self.id = None
 
 
-def Hover(widget, text, duration=0, font=None, bg="#2B2B2B", fg="#ffffff", borderwidth=1, move_with_mouse=True):
-    toolTip = HoverWindow(widget, duration, font, bg, fg, borderwidth, move_with_mouse)
+def Hover(widget, text, duration=0, font=None, bg="#2B2B2B", fg="#ffffff", border_width=1, move_with_mouse=True):
+    toolTip = HoverWindow(widget, duration, font, bg, fg, border_width, move_with_mouse)
     """This function allow you to make a hover window for your interface widget"""
 
     def enter(event):
