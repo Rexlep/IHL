@@ -40,4 +40,4 @@ root.mainloop()
 | move_with_mouse | movement of mouse(True or False) |
 | duration | change the create time of window |
 
-Tanks for visiting i hope it was helpful to increase your development skill :)
+Tanks for visiting i hope it was helpful for you to increase your development skill :)
